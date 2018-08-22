@@ -4,6 +4,7 @@ const loginHTML = () => {
         <input id="loginName" type="text" placeholder="Username">
         <input id="loginPassword" type="password" placeholder="Password">
         <button id="loginButton" class="">Login</button>
+        <button id="guestLogin" class="">Login As Guest</button>
     </div>
     `
 }

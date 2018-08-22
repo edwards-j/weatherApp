@@ -16,9 +16,14 @@ document.querySelector("#loginButton").addEventListener("click", () => {
                 alert("Username does not exist")
             } else {
                 userSS.setUserInSS()
-                document.querySelector("#login").innerHTML = ""
-                renderWeather()
+                
+                renderWeather.renderWeather()
             }
         })
+})
+
+document.querySelector("#guestLogin").addEventListener("click", () => {
+    document.querySelector("#login").innerHTML = ""
+    renderWeather.renderDefaultWeather()
 })
 
